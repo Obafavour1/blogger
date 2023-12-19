@@ -1,0 +1,316 @@
+.home{
+    display: flex;
+    gap: 40px;
+    width: 100vw;
+
+    /* background-color: blue; */
+}
+
+.left-content{
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    color: white;
+    /* padding: 3%; */
+    /* display: none; */
+}
+
+.right-content{
+    width: 50vw;
+    /* background-color: blue; */
+    margin-left: 50%;
+    width: 50vw;
+    padding: 40px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.home-img img{
+    position: absolute;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+span{
+    color: crimson;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 48px;
+    line-height: 50px;
+}
+
+.logo{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.logo h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.text{
+    width: 300px;
+}
+
+.text-content{
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    gap: 50px;
+}
+
+.text2{
+    text-align: right;
+    margin-left: 45%;
+}
+
+.qrCode{
+    position: absolute;
+    bottom: 10px;
+}
+
+
+/* CARD SECTION */
+.cardbox .cardtext{
+    margin: 20px 0;
+    width: 250px;
+}
+
+.cardbox .cardtext p{
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.cardbox img{
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* CARD SECTION 2 */
+
+.cardSection .cardtwo-box{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.cardtwo-box:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.cardtwo-box img{
+    width: 100%;
+    height: 300px;
+}
+
+.cardtwo-text{
+    width: 90%;
+    padding: 30px;
+}
+
+.img{
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+img{
+    transition: 0.5s;
+}
+
+.img img:hover{
+    transform: scale(1.1);
+}
+
+.slide{
+    padding: 10px;
+}
+
+
+@media (max-width: 760px) {
+    .home{
+      flex-direction: column ;
+  
+    }
+
+    h2{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    
+    .logo{
+
+        width: 50px;
+        height: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .logo h1{
+        font-size: 36px;
+    }
+  
+    .left-content{
+        width: 100vw;
+        min-height: 100vh;
+        position: relative;
+        color: white;
+    }
+
+    .content{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-top: 3%;
+        padding: 20px 3%;
+    }
+    
+    .home-img img{
+        position: absolute;
+        z-index: -3;
+        max-width: 100vw;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    
+    .text-content{
+        width: 100%;
+        gap: 70px;
+    }
+    
+    .text2{
+        margin-top: 100px;
+        text-align: right;
+        margin-left: 27%;
+    }
+
+    .text{
+        width:300px;
+    }
+
+
+    .right-content{
+        width: 100vw;
+        /* background-color: blue; */
+        margin-left: 0%;
+        width: 50vw;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+        /* CARD SECTION */
+    .cardSection{
+        width: 100vw;
+        
+    }
+
+    .cardbox{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        place-content: center;
+        align-items: center;
+    }
+    
+    .cardbox .cardtext{
+        margin: 20px 0;
+        width: 60vw;
+    }
+
+    .cardbox img{
+        width: 80vw;
+        height: 250px;
+        margin-top: 10px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+        /* CARD SECTION 2 */
+
+    .cardSection {
+        width: 100vw;
+    }
+    
+    
+    .cardtwo-box{
+        flex-direction: column;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        align-items: center;
+    }
+
+    .cardtwo-box:nth-child(even){
+        flex-direction: column;
+    }
+
+    .cardtwo-box img{
+        width: 80vw;
+        height: 300px;
+    }
+
+    .cardtwo-text{
+        width: 80vw;
+        padding: 30px 0;
+    }
+  }
+
+@media (max-width: 400px) {
+    .text2{
+        text-align: right;
+        margin-left: 10%;
+    }
+
+    .content{
+        padding-top: 20px;
+    }
+
+    .qrCode{
+        bottom: 0;
+    }
+
+    .cardtwo-box img{
+        width: 90vw;
+        height: 300px;
+    }
+
+    .cardbox img{
+        width: 90vw;
+        height: 250px;
+        margin-top: 10px;
+    }
+
+
+}
